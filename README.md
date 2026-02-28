@@ -83,6 +83,10 @@ npm run dev
 ```
 Arayüz genellikle http://localhost:5173 adresinde yayına girer. Tarayıcınızdan bu adrese giderek sistemi kullanmaya başlayabilirsiniz.
 
+# 📸 Arayüz Görseli
+<img width="1541" height="1222" alt="image" src="https://github.com/user-attachments/assets/d846a0ca-fcbc-4e4c-a426-dd5d2c3c83d0" />
+
+
 ---
 
 📡 API Endpoint'leri
