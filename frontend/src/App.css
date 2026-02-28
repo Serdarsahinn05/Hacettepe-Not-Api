@@ -1,0 +1,136 @@
+/* Genel Arka Plan ve Yazı Tipi */
+body {
+    background-color: #212125;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #131313;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Başlık: Hacettepe Kırmızısı */
+h2 {
+    color: #ae1f23; /* Hacettepe Kırmızısı */
+    text-align: center;
+    border-bottom: 2px solid #ae1f23;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* Input Grubu */
+.input-group {
+    display: grid;
+    /* Sütunları daha esnek (fr) hale getiriyoruz ki buton dışarı fırlamasın */
+    grid-template-columns: 2fr 2fr 1fr 1fr auto;
+    gap: 12px;
+    margin-bottom: 30px;
+    align-items: center; /* Elemanları dikeyde hizalar */
+}
+
+input {
+    /* Inputların kutu dışına taşmaması için width'i kontrol altına alıyoruz */
+    width: 100%;
+    box-sizing: border-box; /* Padding değerini genişliğe dahil eder */
+    padding: 10px;
+    background-color: #2a2a2a;
+    color: white;
+    border: 1px solid #444;
+}
+
+input:focus {
+    border-color: #ae1f23;
+}
+
+/* Kaydet Butonu */
+.add-btn {
+    /* Butonun genişliğini içeriği kadar tutuyoruz */
+    white-space: nowrap;
+    padding: 10px 25px;
+}
+
+.add-btn:hover {
+    background-color: #f61212;
+}
+
+/* Ders Listesi Tablosu */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #ae1f23;
+    color: white;
+    text-align: left;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background-color: #511d1d;
+}
+
+/* Silme Butonu */
+.delete-btn {
+    background-color: #f60202;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000;
+}
+
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.stats-card {
+    background: #fff5f5;
+    border: 1px solid #ae1f23;
+    padding: 15px 25px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+}
+
+.stats-card span {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.stats-card strong {
+    font-size: 1.5rem;
+    color: #ae1f23;
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.4fr 0.4fr auto; /* Sütun sayılarını artırdık */
+    gap: 10px;
+}
